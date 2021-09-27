@@ -6,10 +6,4 @@ namespace qnt{
         qb.not();
     }
 
-    QBit not(const QBit& qb){
-        QBit nqb(qb);
-        nqb.not();
-        return nqb;
-    }
-
 }

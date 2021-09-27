@@ -3,8 +3,6 @@
 
 namespace qnt{
 
-    void not(QBit& qb);
-
-    QBit not(const QBit& qb);    
+    void not(QBit& qb);   
 
 }

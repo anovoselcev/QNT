@@ -17,8 +17,12 @@ namespace qnt{
 
         QBit(double zero, double one) noexcept;
 
-        QBit(const QBit& qb) = default;
+        QBit(const QBit& qb) = delete;
 
-        QBit& operator=(const QBit& qb) = default;      
+        QBit& operator=(const QBit& qb) = delete;
+
+        QBit(QBit&& qb) = default;
+
+        QBit& operator=(QBit&& qb) = default;      
     };
 }
