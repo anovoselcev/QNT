@@ -1,6 +1,5 @@
 #include "qbit.hpp"
 #include <cmath>
-#include <utility>
 
 namespace qnt{
 
@@ -12,10 +11,6 @@ namespace qnt{
 
     QBit::QBit(double zero, double one) noexcept : zero_(zero), one_(one)  {
         normalize();
-    }
-
-    void QBit::not() noexcept{
-        std::swap(one_, zero_);
     }
 
 }

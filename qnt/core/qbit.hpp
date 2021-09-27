@@ -11,8 +11,6 @@ namespace qnt{
 
         public:
 
-        void not() noexcept;
-
         QBit() = default;
 
         QBit(double zero, double one) noexcept;
@@ -23,6 +21,9 @@ namespace qnt{
 
         QBit(QBit&& qb) = default;
 
-        QBit& operator=(QBit&& qb) = default;      
+        QBit& operator=(QBit&& qb) = default;
+
+        friend void not(QBit&);
+        friend void adamar(QBit&);      
     };
 }

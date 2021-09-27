@@ -1,9 +1,11 @@
 #include "not.hpp"
+#include "../core/qbit.hpp"
+#include <utility>
 
 namespace qnt{
 
     void not(QBit& qb){
-        qb.not();
+        std::swap(qb.zero_, qb.one_);
     }
 
 }
